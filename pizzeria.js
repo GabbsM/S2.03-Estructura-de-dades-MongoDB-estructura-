@@ -12,6 +12,8 @@ const Cliente= {
 
 }
 
+db.clientes.insert(Cliente)
+
 //LOCALIDAD
 
 const LocalidadId = ObjectId();
@@ -20,6 +22,8 @@ const Localidad = {
     "nombre": "Vilanova i la Geltrú",
 }
 
+db.localidades.insert(Localidad)
+
 //PROVINCIA
 
 const ProvinciaId = ObjectId();
@@ -27,6 +31,8 @@ const Provincia = {
     "_id" : ProvinciaId,
     "nombre": "Barcelona",
 }
+
+db.provincias.insert(Provincia)
 
 //PIZZA
 
@@ -38,6 +44,8 @@ const Pizza = {
     "imagen": null,
     "precio": NumberDecimal (9.95)
 }
+
+db.pizzas.insert(Pizza)
 
 //TIENDA
 
@@ -51,6 +59,8 @@ const Tienda = {
 
 }
 
+db.tiendas.insert(Tienda)
+
 // EMPLEADO
 
 const EmpleadoId =ObjectId();
@@ -62,6 +72,8 @@ const Empleado = {
     "telefono": "665254185"
 
 }
+
+db.empleados.insert(Empleado)
 
 // HAMBURGUESA
 
@@ -76,6 +88,8 @@ const Hamburguesa = {
 
 }
 
+db.hamburguesas.insert(Hamburguesa)
+
 // BEBIDA
 
 const BebidaId = ObjectId();
@@ -87,6 +101,8 @@ const Bebida = {
     "imagen":null,
     "precio":NumberDecimal (3.00)
 }
+
+db.bebidas.insert(Bebida)
 
 //PEDIDO
 
@@ -105,3 +121,5 @@ const Pedido = {
     "tienda_id": tienda_id,
     "empleado_id": EmpleadoId
 }
+
+db.pedidos.insert(Pedido)
